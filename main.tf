@@ -94,7 +94,7 @@ resource "azurerm_windows_virtual_machine" "vm_hub" {
   name                = "vm-hub-01"
   resource_group_name = azurerm_resource_group.rg.name
   location            = var.loc_hub
-  size                = "Standard_B2s"
+  size                = "Standard_D2ads_v6"
   admin_username      = var.admin_user
   admin_password      = var.admin_password
   network_interface_ids = [
@@ -119,7 +119,7 @@ resource "azurerm_windows_virtual_machine" "vm_web1" {
   name                = "vm-web-01"
   resource_group_name = azurerm_resource_group.rg.name
   location            = var.loc_spoke1
-  size                = "Standard_B2s"
+  size                = "Standard_D2ads_v6"
   admin_username      = var.admin_user
   admin_password      = var.admin_password
   network_interface_ids = [
@@ -144,7 +144,7 @@ resource "azurerm_windows_virtual_machine" "vm_web2" {
   name                = "vm-web-02"
   resource_group_name = azurerm_resource_group.rg.name
   location            = var.loc_spoke1
-  size                = "Standard_B2s"
+  size                = "Standard_D2ads_v6"
   admin_username      = var.admin_user
   admin_password      = var.admin_password
   network_interface_ids = [
@@ -169,7 +169,7 @@ resource "azurerm_linux_virtual_machine" "vm_spoke2" {
   name                            = "vm-spoke-02"
   resource_group_name             = azurerm_resource_group.rg.name
   location                        = var.loc_spoke2
-  size                            = "Standard_B2s"
+  size                            = "Standard_D2ads_v6"
   admin_username                  = var.admin_user
   admin_password                  = var.admin_password
   disable_password_authentication = false # Autenticação por senha habilitada, conforme o lab
