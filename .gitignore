@@ -1,0 +1,17 @@
+# Arquivos locais e diretórios do Terraform
+.terraform/
+.terraform.lock.hcl
+*.tfstate
+*.tfstate.backup
+
+# Variáveis contendo senhas e segredos
+*.tfvars
+*.tfvars.json
+
+# Arquivos de sistema operacional
+.DS_Store
+Thumbs.db
+
+
+
+

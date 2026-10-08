@@ -1,0 +1,7 @@
+# terraform.tfvars.example
+rg_name        = "rg-labterraform-prod"
+loc_hub        = "East US"
+loc_spoke1     = "Central US"
+loc_spoke2     = "UK South"
+admin_user     = "admin.luis"
+admin_password = "Lf@f0108"
